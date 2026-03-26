@@ -1,0 +1,38 @@
+# ============================================
+# copilot_setup — MAID Methodology Repo
+# ============================================
+
+# Python virtual environment
+.venv/
+
+# MAID runtime state (session-specific, not for sharing)
+.maid/state.json
+.maid/context.json
+
+# MAID generated outputs (not source material)
+.maid/test-outputs/
+.maid/agent-tests/
+.maid/qa/*-review-*.json
+
+# Secrets
+.env
+.env.local
+.env*.local
+secrets/
+.secrets/
+*.secret
+credentials.json
+service-account.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

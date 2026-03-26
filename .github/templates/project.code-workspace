@@ -1,0 +1,33 @@
+{
+  // ─────────────────────────────────────────────────────────
+  // MAID Multi-Root Workspace Template
+  //
+  // HOW TO USE:
+  // 1. Copy this file to your new project folder
+  // 2. Rename it: my-project-name.code-workspace
+  // 3. Update the second "path" to point to your project folder
+  //    (or leave as "." if the .code-workspace file IS in the project)
+  // 4. Double-click the .code-workspace file to open in VS Code
+  //
+  // GitHub Copilot will read instructions from BOTH roots:
+  //   - copilot_setup/.github/  → universal MAID methodology
+  //   - your-project/.github/   → project-specific policy (if present)
+  // ─────────────────────────────────────────────────────────
+  "folders": [
+    {
+      "name": "Project",
+      "path": "."
+    },
+    {
+      "name": "MAID Setup",
+      "path": "C:/Users/dori/Code/copilot_setup"
+    }
+  ],
+  "settings": {
+    "explorer.sortOrder": "foldersNestsFiles",
+    // Prevents accidental edits to the shared MAID methodology source
+    "files.readonlyInclude": {
+      "**/copilot_setup/**": true
+    }
+  }
+}

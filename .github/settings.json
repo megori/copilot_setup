@@ -1,0 +1,23 @@
+{
+  "_note": "This file is for Claude Code. GitHub Copilot ignores it. hooks.Stop runs bip-notification.py when a Claude Code session ends.",
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Edit",
+      "Write",
+      "Read"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .github/hooks/bip-notification.py"
+          }
+        ]
+      }
+    ]
+  }
+}
